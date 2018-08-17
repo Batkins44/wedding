@@ -1,0 +1,98 @@
+
+
+main{
+    background:ivory;
+    color:black;
+    text-align:center;
+    padding-bottom:600px;
+    font-family: 'Playfair Display', serif;
+}
+
+nav{
+    background:#678A93;
+    color: ivory;
+    width:100%;
+    padding-top:15px;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+nav h1{
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #678A93;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+li {
+    display:inline-block;
+
+}
+
+li a {
+    display: block;
+    color: ivory;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Playfair Display', serif;
+}
+
+li a:hover {
+    background-color: #879BAF;
+    color:ivory;
+    border-radius:6px;
+}
+
+#bodyimg{
+    text-align:center;
+    max-width:100%;
+    height:800px;
+    background-image: url("images/chicago.JPG");
+    margin-top:-30px;
+    z-index:-1;
+    position: relative;
+}
+
+#bodyimgtext{
+    position:absolute;
+    top:90%;
+    left:50%; 
+    text-align:center;
+    transform: translateX(-50%) translateY(-50%);
+    color:ivory;
+    font-family: 'Playfair Display', serif;
+    word-wrap: none;
+    width:100%;
+}
+
+#namesdiv{
+    text-align:center;
+    max-width:100%;
+    height:400px;
+    background:ivory;
+    margin-top:-30px;
+    z-index:-1;
+    position: relative;
+}
+
+#names{
+    position:absolute;
+    top:50%;
+    left:50%; 
+    text-align:center;
+    transform: translateX(-50%) translateY(-50%);
+    color:ivory;
+    font-family: 'Playfair Display', serif;
+    word-wrap: none;
+    width:100%;
+    color:black;
+}
