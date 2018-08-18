@@ -7,3 +7,15 @@ a{
 body{
     background-color: red;
 }
+
+p{
+    padding-left:170px;
+    padding-right:170px;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        padding-left:20px;
+        padding-right:20px;
+    }
+}

@@ -4,7 +4,7 @@ main{
     background:ivory;
     color:black;
     text-align:center;
-    padding-bottom:600px;
+    /* padding-bottom:600px; */
     font-family: 'Playfair Display', serif;
 }
 
@@ -16,6 +16,8 @@ nav{
     padding-bottom:20px;
     text-align: center;
 }
+
+
 
 nav h1{
     text-align:center;
@@ -37,6 +39,12 @@ li {
 
 }
 
+@media only screen and (max-width: 410px) {
+    li {
+        display:inline;
+    }
+}
+
 li a {
     display: block;
     color: ivory;
@@ -45,6 +53,8 @@ li a {
     text-decoration: none;
     font-family:'Playfair Display', serif;
 }
+
+
 
 li a:hover {
     background-color: #879BAF;
@@ -56,11 +66,24 @@ li a:hover {
     text-align:center;
     max-width:100%;
     height:800px;
-    background-image: url("images/chicago.JPG");
+    background-image: url("../images/chicago.jpg");
     margin-top:-30px;
-    z-index:-1;
     position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;  
+    
 }
+
+@media only screen and (min-width: 968px) {
+    #bodyimg {
+        background-size:cover;
+
+
+    }
+}
+
+
+
 
 #bodyimgtext{
     position:absolute;
@@ -74,13 +97,30 @@ li a:hover {
     width:100%;
 }
 
+@media only screen and (max-width: 968px) {
+    #bodyimgtext {
+        padding-top:50px;
+        color:black;
+        margin-bottom:-30;
+        padding-bottom:20px
+    }
+}
+
+@media only screen and (max-width: 389px) {
+    #bodyimgtext {
+        padding-top:-50px;
+        color:black;
+        margin-bottom:-10;
+        padding-bottom:40px
+    }
+}
+
 #namesdiv{
     text-align:center;
     max-width:100%;
     height:400px;
     background:ivory;
     margin-top:-30px;
-    z-index:-1;
     position: relative;
 }
 
