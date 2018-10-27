@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/rsvp.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
@@ -21,12 +22,45 @@
         </ul>
     </nav>
 <main>
-        <h1>This page will be up soon!</h1>
-</main>
+        <h1>RSVP</h1> 
+    <div id="q1">
 
+        <h2>What is your Last Name</h2>
+        <input type="text" name="lastName" id="lName">
+        <h2 class="qhead">Will you be attending the wedding?</h2>
+        <form>
+            <input type="radio" name="attend" id='q1yes' value="yes">Yes<br>
+            <input type="radio" name="attend" id='q1no' value="no">No<br>
+        </form>
+        <div class="button-class">
+            <button id="q1button">Submit</button>
+        </div>
+    </div>
+    <div id="q2" class="hide">
+        <h2 class='qhead'>How many people in your party?</h2>
+        <form>
+            <input type="number" id='num-people'><br>
+        </form>
+        <div class="button-class">
+            <button id="q2button">Submit</button>
+        </div>
+    </div>
+    <div id="q3" class="hide">
+            <h2 id='q3head' class='qhead'>Please Fill out the following information</h2>
+            <form id="q3form">
+                   
+            </form>
+            <div class="button-class">
+                <button id="q3button">Submit</button>
+            </div>
+        </div>
+    
+
+</main>
+<script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<script src="../js/rsvp.js"></script>
 </body>
 </html>
